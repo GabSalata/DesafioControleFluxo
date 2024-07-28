@@ -1,18 +1,32 @@
-## Getting Started
+# Desafio de Controle de Fluxo
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Descrição
 
-## Folder Structure
+Este projeto é um exercício para aplicar conceitos de controle de fluxo em Java. O sistema deve receber dois parâmetros via terminal que representarão dois números inteiros e, com base nesses números, realizar uma série de interações (loops) para imprimir números incrementados. 
 
-The workspace contains two folders by default, where:
+## Requisitos
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+1. O sistema deve receber dois parâmetros via terminal que representarão dois números inteiros.
+2. O sistema deve calcular a quantidade de interações (usando um loop `for`) e realizar a impressão no console (`System.out.print`) dos números incrementados.
+    - Exemplo: Se os números fornecidos forem 12 e 30, o sistema deve realizar 18 interações e imprimir: 
+      ```
+      Imprimindo o número 1
+      Imprimindo o número 2
+      ...
+      Imprimindo o número 18
+      ```
+3. Se o primeiro parâmetro for maior que o segundo parâmetro, o sistema deve lançar uma exceção customizada chamada `ParametrosInvalidosException` com a mensagem: "O segundo parâmetro deve ser maior que o primeiro".
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Estrutura do Projeto
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+O projeto deve conter as seguintes classes:
 
-## Dependency Management
+- `Contador.java`: Classe principal que contém a lógica para receber os parâmetros, realizar as interações e imprimir os números.
+- `ParametrosInvalidosException.java`: Classe que representa a exceção customizada para o caso de o primeiro parâmetro ser maior que o segundo.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Instruções para Execução
+
+1. Clone o repositório para sua máquina local:
+   ```bash
+   git clone https://github.com/GabSalata/DesafioControleFluxo
+
